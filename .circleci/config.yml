@@ -3,8 +3,8 @@ version: 2
 jobs:
   build:
     docker:
-		  - image: "debian:stretch"
-			  steps:
+       - image: "debian:stretch"
+			 steps:
 			  - checkout
 			  - run:
 				   name: Installing cxxtest
