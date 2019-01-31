@@ -5,9 +5,9 @@ jobs:
     docker:
 		  - image: "debian:stretch"
 			steps:
-      - checkout
+			- checkout
 			- run:
-					name: Installing cxxtest
+			    name: Installing cxxtest
 					command: sudo apt install cxxtes
 
 
