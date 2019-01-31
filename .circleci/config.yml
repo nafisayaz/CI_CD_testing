@@ -3,11 +3,11 @@ version: 2
 jobs:
   build:
     docker:
-		  - image: "debian:stretch"
-			steps:
-			- checkout
-			- run:
-			  name: Installing cxxtest
-				command: sudo apt install cxxtes
+		- image: "debian:stretch"
+		steps:
+		- checkout
+		- run:
+		   name: Installing cxxtest
+		   command: sudo apt install cxxtes
 
 
