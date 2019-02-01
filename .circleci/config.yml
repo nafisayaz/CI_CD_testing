@@ -11,7 +11,7 @@ jobs:
                 command: apt-get update
             - run:
                 name: CXXTEST INSTALLATION
-                command: apt-get install cxxtest
+                command: apt-get install -y cxxtest
             - run:
                 name: MAKEFILE RUN 
                 command: make
