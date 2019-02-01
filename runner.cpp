@@ -39,5 +39,17 @@ public:
  void runTest() { suite_Test.test_addfunction(); }
 } testDescription_suite_Test_test_addfunction;
 
+static class TestDescription_suite_Test_test_gragh_highest : public CxxTest::RealTestDescription {
+public:
+ TestDescription_suite_Test_test_gragh_highest() : CxxTest::RealTestDescription( Tests_Test, suiteDescription_Test, 17, "test_gragh_highest" ) {}
+ void runTest() { suite_Test.test_gragh_highest(); }
+} testDescription_suite_Test_test_gragh_highest;
+
+static class TestDescription_suite_Test_test_gragh_lowest : public CxxTest::RealTestDescription {
+public:
+ TestDescription_suite_Test_test_gragh_lowest() : CxxTest::RealTestDescription( Tests_Test, suiteDescription_Test, 24, "test_gragh_lowest" ) {}
+ void runTest() { suite_Test.test_gragh_lowest(); }
+} testDescription_suite_Test_test_gragh_lowest;
+
 #include <cxxtest/Root.cpp>
 const char* CxxTest::RealWorldDescription::_worldName = "cxxtest";
