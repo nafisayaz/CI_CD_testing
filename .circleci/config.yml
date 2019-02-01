@@ -10,6 +10,9 @@ jobs:
                 name: APT_GET UPDATE
                 command: apt-get update
             - run:
+                name: GNU-GCC INSTALLATION
+                command: apt-get install -y gcc
+            - run:
                 name: CXXTEST INSTALLATION
                 command: apt-get install -y cxxtest
             - run:
