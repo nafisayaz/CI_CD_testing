@@ -25,4 +25,7 @@ jobs:
             - run:
                 name:  COMPILE RUNNER.CPP FILE
                 command: g++ -o runner -IXXTEST runner.cpp
+            - run:
+                name: RUN RUNNER
+                command: ./runner
 
