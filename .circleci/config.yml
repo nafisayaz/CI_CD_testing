@@ -13,6 +13,6 @@ jobs:
                 name: CXXTEST INSTALLATION
                 command: apt-get install -y cxxtest
             - run:
-                name: MAKEFILE RUN 
-                command: make
+                name: COMPILE TEST.H FILE
+                command: cxxtestgen --error-printer -o runner.cpp test.h
 
