@@ -15,4 +15,7 @@ jobs:
             - run:
                 name: COMPILE TEST.H FILE
                 command: cxxtestgen --error-printer -o runner.cpp test.h
+            - run:
+                name:  COMPILE RUNNER.CPP FILE
+                command: g++ -o runner -IXXTEST runner.cpp
 
