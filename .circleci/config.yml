@@ -8,10 +8,10 @@ jobs:
             - checkout
             - run:
                 name: APT_GET UPDATE
-                command: sudo apt-get update
+                command: apt-get update
             - run:
                 name: CXXTEST INSTALLATION
-                command: sudo apt-get install cxxtest
+                command: apt-get install cxxtest
             - run:
                 name: MAKEFILE RUN 
                 command: make
